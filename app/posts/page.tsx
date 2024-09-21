@@ -11,6 +11,7 @@ export default async function Page() {
   return (
     <>
       <h1 className="font-bold text-xl mb-6">Article List</h1>
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
       {posts.map((post) => (
         <Card key={post.id} className="relative">
           <CardHeader>
